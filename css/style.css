@@ -1,0 +1,135 @@
+:root {
+  /* Couleurs */
+  --color-primary: #2563eb;
+  --color-secondary: #1e293b;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+
+  /* Polices */
+  --font-main: "Inter", sans-serif;
+  --font-title: "Poppins", sans-serif;
+
+  /* Tailles de texte */
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.5rem;
+
+  /* Espacements */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  /* Bordures */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+}
+
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --font-main: "Inter", sans-serif;
+  --font-title: "Poppins", sans-serif;
+}
+
+/* Application des polices */
+body {
+  font-family: var(--font-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+
+
+:root {
+  /* Palette principale */
+  --color-primary: #2563eb;       /* Bleu principal */
+  --color-primary-dark: #0000ff;  /* Bleu foncé */
+
+  /* Couleurs de fond */
+  --color-background: #f8fafc;    /* Fond global */
+  --color-surface: #ffffff;       /* Cartes / sections */
+
+  /* Texte */
+  --color-text: #0f172a;          /* Texte principal */
+  --color-text-light: #64748b;    /* Texte secondaire */
+
+  /* États */
+  --color-success: #00ff00;       /* Succès */
+  --color-warning: #f59e0b;       /* Avertissement */
+  --color-danger: #dc2626;        /* Erreur */
+
+  /* Bordures */
+  --color-border: #e2e8f0;
+}
+
+
+
+   /* RESET CSS */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+   /* BASE HTML */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+
+  background-color: #f8fafc;
+  color: #0f172a;
+
+  min-height: 100vh;
+}
+
+/* =========================
+   ÉLÉMENTS DE BASE
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
