@@ -50,25 +50,56 @@ href="blog.html">Blog</a></li>
 
  <!-- Contenu principal -->
  <main>
- <section id="hero">
- <div class="container py-5">
- <h1>Trouvez le talent africain qu'il vous faut</h1>
- <p>AfriTalent connecte les freelances africains aux clients du
-monde entier.</p>
- <a href="freelances.html" class="btn btn-primary">Decouvrir les
-talents</a>
- </div>
- <section id="statistiques">
- <div class="container py-5">
- <h2>AfriTalent en chiffres</h2>
- <div class="row text-center">
- <div class="col-md-4"><p>1 200+ Freelances</p></div>
- <div class="col-md-4"><p>45 Pays representes</p></div>
- <div class="col-md-4"><p>3 800+ Projets realises</p></div>
- </div>
- </div>
- </section>
- </section>
+<section id="hero">
+  <div class="container py-5 hero-grid">
+
+<div class="hero-text">
+  <h1>Trouvez le talent africain qu'il vous faut</h1>
+  <p>AfriTalent connecte les freelances africains aux clients du monde entier.</p>
+
+  <a href="freelances.html" class="btn btn-primary">
+    Découvrir les talents
+  </a>
+</div>
+
+  </div>
+</section>
+
+<!-- STATISTIQUES -->
+
+<section id="statistiques">
+  <div class="container py-5">
+
+<h2 class="text-center mb-4">AfriTalent en chiffres</h2>
+
+<div class="row text-center">
+
+  <div class="col-md-4">
+    <div class="stat-card">
+      <h3>1 200+</h3>
+      <p>Freelances</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="stat-card">
+      <h3>45</h3>
+      <p>Pays représentés</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="stat-card">
+      <h3>3 800+</h3>
+      <p>Projets réalisés</p>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
   <div class="text-center">
 
     <a href="freelances.html" class="btn btn-primary">
@@ -274,40 +305,86 @@ talents</a>
 
  <section id="temoignages">
  <div class="container py-5">
- <h2 class="text-center">Ce que disent nos clients</h2>
 
-<div class="row mt-4">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/tem.jpeg" class="card-img-top" alt="" height="200px">
-          <div class="card-body">
-            <h5 class="card-title text-center">Boury Ndao</h5>
-            <p class="card-text">J'ai trouvé des specialistes en informatiques fiables grâce à AfriTalent.</p>
-            <div class="text-center">⭐⭐⭐⭐ </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/tem1.jpeg" class="card-img-top" alt="" height="200px">
-          <div class="card-body">
-            <h5 class="card-title text-center">Souleymane Diene</h5>
-            <p class="card-text">AfriTalent m'a permis de recruter rapidement des talents qualifiés en informatique.</p>
-            <div class="text-center">⭐⭐⭐ </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/WhatsApp Image 2026-05-12 at 22.22.07.jpeg" class="card-img-top" alt="" height="200px">
-          <div class="card-body">
-            <h5 class="card-title text-center">Ismaïla Ndoye</h5>
-            <p class="card-text">AfriTalent m'a permis de trouver un developpeur competent en moins de 48h.</p>
-            <div class="text-center">⭐⭐⭐⭐⭐</div>
-          </div>
-        </div>
+
+    <section id="temoignages" class="py-5">
+
+  <div class="container">
+
+```
+<h2 class="text-center mb-5">
+  Ce que disent nos clients
+</h2>
+
+<!-- CAROUSEL BOOTSTRAP -->
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="testimonial-card text-center mx-auto">
+
+        <img src="images/tem.jpeg" class="rounded-circle mb-3" width="200" height="200">
+
+        <h5>Boury Ndao</h5>
+        <p class="text-muted">
+          J'ai trouvé des spécialistes fiables grâce à AfriTalent.
+        </p>
+        <span>⭐⭐⭐⭐</span>
+
       </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="testimonial-card text-center mx-auto">
+
+        <img src="images/tem1.jpeg" class="rounded-circle mb-3" width="200" height="200">
+
+        <h5>Souleymane Diene</h5>
+        <p class="text-muted">
+          Plateforme rapide et efficace pour recruter des talents.
+        </p>
+        <span>⭐⭐⭐⭐</span>
+
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="testimonial-card text-center mx-auto">
+
+        <img src="images/WhatsApp Image 2026-05-12 at 22.22.07.jpeg"
+             class="rounded-circle mb-3 img-center"
+             width="200"
+             height="200">
+
+        <h5>Ismaïla Ndoye</h5>
+        <p class="text-muted">
+          J'ai trouvé un développeur compétent en 48h.
+        </p>
+        <span>⭐⭐⭐⭐⭐</span>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTROLES -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+  </div>
+
+</section>
 
 
 <section id="cta">
