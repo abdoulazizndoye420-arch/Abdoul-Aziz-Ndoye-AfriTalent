@@ -26,18 +26,25 @@ rel="stylesheet">
  </button>
  <div class="collapse navbar-collapse" id="navMenu">
  <ul class="navbar-nav ms-auto">
- <li class="nav-item"><a class="nav-link active"
-href="index.html">Accueil</a></li>
- <li class="nav-item"><a class="nav-link"
-href="freelances.html">Freelances</a></li>
- <li class="nav-item"><a class="nav-link"
-href="tarifs.html">Tarifs</a></li>
- <li class="nav-item"><a class="nav-link" href="about.html">A
-propos</a></li>
- <li class="nav-item"><a class="nav-link"
-href="contact.html">Contact</a></li>
-<li class="nav-item"><a class="nav-link"
-href="blog.html">Blog</a></li>
+  <li class="nav-item">
+    <a class="nav-link active"href="index.html">Accueil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"href="freelances.html">Freelances</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link"href="tarifs.html">Tarifs</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link" href="about.html">Apropos</a>
+  </li>
+ <li class="nav-item">
+    <a class="nav-link"href="contact.html">Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"href="blog.html">Blog</a>
+  </li>
+</ul>
 
 <button class="btn btn-primary">Rejoindre AfriTalent</button>
  </ul>
@@ -89,9 +96,8 @@ href="blog.html">Blog</a></li>
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Sujet</label>
-
-                <select class="form-select" required>
+                <label class="form-label" for="sujet">Sujet</label>
+                <select class="form-select" id="sujet" name="sujet" required>
                   <option selected disabled>Choisissez un sujet</option>
                   <option>Demande d'information</option>
                   <option>Support technique</option>
