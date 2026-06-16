@@ -11,7 +11,7 @@ rel="stylesheet">
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<!-- <body> -->
  <!-- Le contenu de la page sera ajoute ici -->
   
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -70,34 +70,40 @@ rel="stylesheet">
 
             <h2 class="mb-4 text-primary">Contactez-nous</h2>
 
-            <form>
+            <form id="contactForm">
 
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Nom</label>
-                  <input type="text" class="form-control" placeholder="Votre nom" required>
-                  <div class="text-danger small">
+                  <input type="text" id="nom" class="form-control" placeholder="Votre nom" required>
+                  <div id="nomError" class="text-danger small">
                   </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
                   <label class="form-label">Prénom</label>
-                  <input type="text" class="form-control" placeholder="Votre prénom" required>
-                  <div class="text-danger small">
+                  <input type="text" id="prenom" class="form-control" placeholder="Votre prénom" required>
+                  <div id="prenomError" class="text-danger small">
                   </div>
                 </div>
               </div>
 
               <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="exemple@email.com" required>
-                <div class="text-danger small">
+                <input type="email" id="email" class="form-control" placeholder="exemple@email.com" required>
+                <div id="emailError" class="text-danger small">
                 </div>
               </div>
 
               <div class="mb-3">
                 <label class="form-label" for="sujet">Sujet</label>
-                <select class="form-select" id="sujet" name="sujet" required>
+                <!-- <select class="form-select" id="sujet" name="sujet" required>
+
+                  <textarea id="message" class="form-control" rows="5"
+                    placeholder="Votre message..."></textarea>
+
+                  <div id="messageError" class="text-danger small"></div> -->
+
                   <option selected disabled>Choisissez un sujet</option>
                   <option>Demande d'information</option>
                   <option>Support technique</option>
@@ -108,7 +114,11 @@ rel="stylesheet">
               <div class="mb-3">
                 <label class="form-label">Message</label>
 
-                <textarea class="form-control" rows="5" placeholder="Votre message..." required></textarea>
+                <!-- <textarea class="form-control" rows="5" placeholder="Votre message..." required></textarea> -->
+                 <textarea id="message" class="form-control" rows="5"
+                    placeholder="Votre message..."></textarea>
+
+                  <div id="messageError" class="text-danger small"></div>
 
                 <div class="text-danger small">
                   Le message doit contenir au moins 20 caractères.
@@ -118,7 +128,7 @@ rel="stylesheet">
               <button type="submit" class="btn btn-primary">
                 Envoyer
               </button>
-
+              <div id="successMessage" class="text-success mt-3"></div>
             </form>
 
           </div>
@@ -133,8 +143,8 @@ rel="stylesheet">
   ↑
  </a>
 
-</body>
-</html>
+<!-- </body>
+</html> -->
 
 
 <footer id="footer">
