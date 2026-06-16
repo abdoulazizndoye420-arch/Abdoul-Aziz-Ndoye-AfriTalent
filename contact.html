@@ -11,14 +11,14 @@ rel="stylesheet">
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- <body> -->
+<body class="bg-light">
  <!-- Le contenu de la page sera ajoute ici -->
   
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
 
     <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="logo" width="80px">
+      <img src="images/logo.png" alt="logo" width="80">
     </a>
 
     <button class="navbar-toggler" type="button"
@@ -56,7 +56,6 @@ rel="stylesheet">
 </div>
 
 
-<body class="bg-light">
 
   <div class="container py-5">
 
@@ -97,18 +96,12 @@ rel="stylesheet">
 
               <div class="mb-3">
                 <label class="form-label" for="sujet">Sujet</label>
-                <!-- <select class="form-select" id="sujet" name="sujet" required>
-
-                  <textarea id="message" class="form-control" rows="5"
-                    placeholder="Votre message..."></textarea>
-
-                  <div id="messageError" class="text-danger small"></div> -->
-
-                  <option selected disabled>Choisissez un sujet</option>
-                  <option>Demande d'information</option>
-                  <option>Support technique</option>
-                  <option>Autres</option>
-                </select>
+                  <select class="form-select" id="sujet" name="sujet" required>
+                    <option value="" selected disabled>Choisissez un sujet</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="support">Support technique</option>
+                    <option value="autres">Autres</option>
+                  </select>
               </div>
 
               <div class="mb-3">
@@ -143,11 +136,7 @@ rel="stylesheet">
   ↑
  </a>
 
-<!-- </body>
-</html> -->
-
-
-<footer id="footer">
+ <footer id="footer">
 
   <!-- <div class="container"> -->
 
@@ -174,9 +163,9 @@ rel="stylesheet">
 
       <div class="col-lg-3 col-md-6 mb-4 text-white">
 
-        <h5 class="text-white">
+        <h3 class="text-white">
           Liens utiles
-        </h5>
+        </h3>
 
         <ul class="footer-links">
 
@@ -202,9 +191,9 @@ rel="stylesheet">
 
       <div class="col-lg-3 col-md-6 mb-4 text-white">
 
-        <h5>
+        <h3>
           Contact
-        </h5>
+        </h3>
 
         <ul class="footer-contact">
 
@@ -235,6 +224,7 @@ rel="stylesheet">
   <!-- </div> -->
 
 </footer>
+
         
  <!-- Bootstrap 5 via CDN : script JavaScript -->
  <script
